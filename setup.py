@@ -12,7 +12,8 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/voidspace/example-distance",
-    packages=setuptools.find_packages(),
+    packages=['distance'],
+    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU General Public License v3.0 or later (GPL-3.0-or-later)",
