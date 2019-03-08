@@ -1,4 +1,5 @@
 #--index-url http://localhost:8000
+#--trusted-host http://localhost:8000
 
 Django==2.1.7
 #location==0.1.0

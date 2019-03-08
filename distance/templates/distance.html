@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Select Towns to Calculate Distance Between Them</h1>
+<form action="/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+{% if result %}
+<p>The distance between {{ from_town }} and {{ to_town }} is {{ distance|floatformat:3 }} kilometers.</p>
+{% endif %}
+{% endblock content %}
